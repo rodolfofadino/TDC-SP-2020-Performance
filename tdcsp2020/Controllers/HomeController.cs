@@ -19,10 +19,9 @@ namespace tdcsp2020.Controllers
             _newsService = newsService;
         }
 
-
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            var news = _newsService.Load(20, "turismo");
+            var news = await _newsService.LoadAsync(20, "turismo");
 
             return View(news);
         }

@@ -1,5 +1,7 @@
 ﻿(function ($) {
     $(function () {
+        $('.lazy').lazy();
+
         $('.jcarousel').jcarousel();
         $('.jcarousel').jcarouselAutoscroll({
             interval: 1000

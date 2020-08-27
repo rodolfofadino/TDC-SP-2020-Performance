@@ -12,16 +12,16 @@
             <div class="jcarousel">
                 <ul>
                     <li>
-                        <img class="carroseulimage" src="~/img/imagem-1.png" />
+                        <img class="carroseulimage" src="~/img/imagem-1.jpg" />
                     </li>
                     <li>
-                        <img class="carroseulimage" src="~/img/imagem-2.png" />
+                        <img class="carroseulimage" src="~/img/imagem-2.jpg" />
                     </li>
                     <li>
-                        <img class="carroseulimage" src="~/img/imagem-3.png" />
+                        <img class="carroseulimage" src="~/img/imagem-3.jpg" />
                     </li>
                     <li>
-                        <img class="carroseulimage" src="~/img/imagem-4.png" />
+                        <img class="carroseulimage" src="~/img/imagem-4.jpg" />
                     </li>
                 </ul>
             </div>
@@ -34,43 +34,49 @@
     <div id="menu">
         <ul>
             <li>
-                <img class="icon" src="~/img/brasil.png" />
+                <div class="icon mysprite brasil"  ></div>
                 Brasil
             </li>
             <li>
-                <img class="icon" src="~/img/alemanha.png" />
+                <div class="icon mysprite alemanha"></div>
                 Alemanha
             </li>
             <li>
-                <img class="icon" src="~/img/grecia.png" />
+                <div class="icon mysprite grecia"></div>
                 Grecia
             </li>
             <li>
-                <img class="icon" src="~/img/eua.png" />
+                <div class="icon mysprite eua"></div>
                 EUA
             </li>
             <li>
-                <img class="icon" src="~/img/canada.png" />
+                <div class="icon mysprite canada"></div>
+
                 Canada
             </li>
             <li>
-                <img class="icon" src="~/img/argentina.png" />
+                <div class="icon mysprite argentina"></div>
+
                 Argentina
             </li>
             <li>
-                <img class="icon" src="~/img/japao.png" />
+                <div class="icon mysprite japao"></div>
+
                 Japão
             </li>
             <li>
-                <img class="icon" src="~/img/italia.png" />
+                <div class="icon mysprite italia"></div>
+
                 Italia
             </li>
             <li>
-                <img class="icon" src="~/img/espanha.png" />
+                <div class="icon mysprite espanha"></div>
+
                 Espanha
             </li>
             <li>
-                <img class="icon" src="~/img/portugal.png" />
+                <div class="icon mysprite portugal"></div>
+
                 Portugal
             </li>
         </ul>
@@ -88,7 +94,7 @@
                     <div class="card mb-4 box-shadow">
                         @if (item.Image != string.Empty)
                         {
-                            <img class="card-img-top" src="@item.Image" alt="@item.Title">
+                            <img class="card-img-top lazy" data-src="@item.Image" alt="@item.Title">
                         }
                         <div class="card-body">
                             <p class="card-text">@item.Title</p>

@@ -1,0 +1,58 @@
+/*
+This is an example of how to use the image sprite in your own CSS files
+*/
+.mysprite {
+	background-image: url('mysprite.sprite.png');
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+.mysprite.alemanha {
+	width: 50px;
+	height: 33px;
+	background-position: -10px -10px;
+}
+.mysprite.argentina {
+	width: 50px;
+	height: 33px;
+	background-position: -10px -53px;
+}
+.mysprite.brasil {
+	width: 50px;
+	height: 33px;
+	background-position: -10px -96px;
+}
+.mysprite.canada {
+	width: 50px;
+	height: 33px;
+	background-position: -10px -139px;
+}
+.mysprite.espanha {
+	width: 50px;
+	height: 33px;
+	background-position: -10px -182px;
+}
+.mysprite.eua {
+	width: 50px;
+	height: 33px;
+	background-position: -10px -225px;
+}
+.mysprite.grecia {
+	width: 50px;
+	height: 33px;
+	background-position: -10px -268px;
+}
+.mysprite.italia {
+	width: 50px;
+	height: 33px;
+	background-position: -10px -311px;
+}
+.mysprite.japao {
+	width: 50px;
+	height: 33px;
+	background-position: -10px -354px;
+}
+.mysprite.portugal {
+	width: 50px;
+	height: 33px;
+	background-position: -10px -397px;
+}

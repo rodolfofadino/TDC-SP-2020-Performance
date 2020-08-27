@@ -1,0 +1,10 @@
+[
+  {
+    "outputFileName": "wwwroot/css/bundle.css",
+    "inputFiles": [
+      "wwwroot/css/jcarousel.basic.css",
+      "wwwroot/css/site.css"
+    ]
+  }
+  
+]
