@@ -1,0 +1,108 @@
+﻿@model List<tdcsp2020.Models.News>
+@{
+    ViewData["Title"] = "Minhas Viagens";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Minhas Viagens</h1>
+</div>
+<div class="row">
+    <div id="carroseul" class="col">
+        <div class="jcarousel-wrapper">
+            <div class="jcarousel">
+                <ul>
+                    <li>
+                        <img class="carroseulimage" src="~/img/imagem-1.png" />
+                    </li>
+                    <li>
+                        <img class="carroseulimage" src="~/img/imagem-2.png" />
+                    </li>
+                    <li>
+                        <img class="carroseulimage" src="~/img/imagem-3.png" />
+                    </li>
+                    <li>
+                        <img class="carroseulimage" src="~/img/imagem-4.png" />
+                    </li>
+                </ul>
+            </div>
+           
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div id="menu">
+        <ul>
+            <li>
+                <img class="icon" src="~/img/brasil.png" />
+                Brasil
+            </li>
+            <li>
+                <img class="icon" src="~/img/alemanha.png" />
+                Alemanha
+            </li>
+            <li>
+                <img class="icon" src="~/img/grecia.png" />
+                Grecia
+            </li>
+            <li>
+                <img class="icon" src="~/img/eua.png" />
+                EUA
+            </li>
+            <li>
+                <img class="icon" src="~/img/canada.png" />
+                Canada
+            </li>
+            <li>
+                <img class="icon" src="~/img/argentina.png" />
+                Argentina
+            </li>
+            <li>
+                <img class="icon" src="~/img/japao.png" />
+                Japão
+            </li>
+            <li>
+                <img class="icon" src="~/img/italia.png" />
+                Italia
+            </li>
+            <li>
+                <img class="icon" src="~/img/espanha.png" />
+                Espanha
+            </li>
+            <li>
+                <img class="icon" src="~/img/portugal.png" />
+                Portugal
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="album py-5 bg-light">
+    <div class="container">
+
+        <div class="row">
+
+            @foreach (var item in Model)
+            {
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        @if (item.Image != string.Empty)
+                        {
+                            <img class="card-img-top" src="@item.Image" alt="@item.Title">
+                        }
+                        <div class="card-body">
+                            <p class="card-text">@item.Title</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a href="@item.Link" class="btn btn-sm btn-outline-secondary">View</a>
+                                    <a class="btn btn-sm btn-outline-secondary">Edit</a>
+                                </div>
+                                <small class="text-muted">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
